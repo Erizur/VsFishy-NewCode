@@ -1,0 +1,15 @@
+{
+    "song": {
+        "player2": "fishy",
+        "player1": "bf",
+        "stage": "stage",
+        "speed": 2,
+        "needsVoices": true,
+        "sectionLengths": [],
+        "song": "fish-box",
+        "notes": [],
+        "bpm": 256,
+        "sections": 0,
+        "validScore": true
+    }
+}
