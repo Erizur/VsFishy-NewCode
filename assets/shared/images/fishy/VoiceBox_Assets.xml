@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="VoiceBox_Assets.png">
+	<!-- Created with Adobe Animate version 20.0.0.17400 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="VoiceBox Down Note 0000" x="0" y="0" width="416" height="174" frameX="0" frameY="-10" frameWidth="422" frameHeight="184"/>
+	<SubTexture name="VoiceBox Down Note 0001" x="0" y="0" width="416" height="174" frameX="0" frameY="-10" frameWidth="422" frameHeight="184"/>
+	<SubTexture name="VoiceBox Down Note 0002" x="416" y="0" width="401" height="184" frameX="-21" frameY="0" frameWidth="422" frameHeight="184"/>
+	<SubTexture name="VoiceBox Down Note 0003" x="416" y="0" width="401" height="184" frameX="-21" frameY="0" frameWidth="422" frameHeight="184"/>
+	<SubTexture name="VoiceBox Down Note 0004" x="416" y="0" width="401" height="184" frameX="-21" frameY="0" frameWidth="422" frameHeight="184"/>
+	<SubTexture name="VoiceBox Down Note 0005" x="416" y="0" width="401" height="184" frameX="-21" frameY="0" frameWidth="422" frameHeight="184"/>
+	<SubTexture name="VoiceBox Down Note 0006" x="416" y="0" width="401" height="184" frameX="-21" frameY="0" frameWidth="422" frameHeight="184"/>
+	<SubTexture name="VoiceBox Down Note 0007" x="416" y="0" width="401" height="184" frameX="-21" frameY="0" frameWidth="422" frameHeight="184"/>
+	<SubTexture name="VoiceBox Down Note 0008" x="416" y="0" width="401" height="184" frameX="-21" frameY="0" frameWidth="422" frameHeight="184"/>
+	<SubTexture name="VoiceBox Down Note 0009" x="416" y="0" width="401" height="184" frameX="-21" frameY="0" frameWidth="422" frameHeight="184"/>
+	<SubTexture name="VoiceBox Down Note 0010" x="416" y="0" width="401" height="184" frameX="-21" frameY="0" frameWidth="422" frameHeight="184"/>
+	<SubTexture name="VoiceBox Down Note 0011" x="416" y="0" width="401" height="184" frameX="-21" frameY="0" frameWidth="422" frameHeight="184"/>
+	<SubTexture name="VoiceBox Down Note 0012" x="416" y="0" width="401" height="184" frameX="-21" frameY="0" frameWidth="422" frameHeight="184"/>
+	<SubTexture name="VoiceBox Down Note 0013" x="416" y="0" width="401" height="184" frameX="-21" frameY="0" frameWidth="422" frameHeight="184"/>
+	<SubTexture name="VoiceBox Down Note 0014" x="416" y="0" width="401" height="184" frameX="-21" frameY="0" frameWidth="422" frameHeight="184"/>
+	<SubTexture name="VoiceBox Idle0000" x="817" y="0" width="175" height="414" frameX="-49" frameY="-4" frameWidth="282" frameHeight="422"/>
+	<SubTexture name="VoiceBox Idle0001" x="992" y="0" width="175" height="414" frameX="-52" frameY="-4" frameWidth="282" frameHeight="422"/>
+	<SubTexture name="VoiceBox Idle0002" x="1167" y="0" width="176" height="416" frameX="-61" frameY="-3" frameWidth="282" frameHeight="422"/>
+	<SubTexture name="VoiceBox Idle0003" x="1343" y="0" width="188" height="416" frameX="-65" frameY="-3" frameWidth="282" frameHeight="422"/>
+	<SubTexture name="VoiceBox Idle0004" x="1531" y="0" width="217" height="413" frameX="-65" frameY="-5" frameWidth="282" frameHeight="422"/>
+	<SubTexture name="VoiceBox Idle0005" x="1748" y="0" width="177" height="421" frameX="-62" frameY="-1" frameWidth="282" frameHeight="422"/>
+	<SubTexture name="VoiceBox Idle0006" x="0" y="421" width="175" height="422" frameX="-35" frameY="0" frameWidth="282" frameHeight="422"/>
+	<SubTexture name="VoiceBox Idle0007" x="175" y="421" width="174" height="419" frameX="-16" frameY="-1" frameWidth="282" frameHeight="422"/>
+	<SubTexture name="VoiceBox Idle0008" x="349" y="421" width="173" height="417" frameX="-4" frameY="-2" frameWidth="282" frameHeight="422"/>
+	<SubTexture name="VoiceBox Idle0009" x="522" y="421" width="173" height="416" frameX="0" frameY="-2" frameWidth="282" frameHeight="422"/>
+	<SubTexture name="VoiceBox Idle0010" x="695" y="421" width="173" height="416" frameX="-2" frameY="-2" frameWidth="282" frameHeight="422"/>
+	<SubTexture name="VoiceBox Idle0011" x="868" y="421" width="173" height="417" frameX="-8" frameY="-2" frameWidth="282" frameHeight="422"/>
+	<SubTexture name="VoiceBox Idle0012" x="1041" y="421" width="173" height="417" frameX="-18" frameY="-2" frameWidth="282" frameHeight="422"/>
+	<SubTexture name="VoiceBox Idle0013" x="1214" y="421" width="173" height="417" frameX="-32" frameY="-2" frameWidth="282" frameHeight="422"/>
+	<SubTexture name="VoiceBox Idle0014" x="817" y="0" width="175" height="414" frameX="-49" frameY="-4" frameWidth="282" frameHeight="422"/>
+	<SubTexture name="VoiceBox Left Note0000" x="1387" y="421" width="262" height="251" frameX="0" frameY="0" frameWidth="267" frameHeight="251"/>
+	<SubTexture name="VoiceBox Left Note0001" x="1387" y="421" width="262" height="251" frameX="0" frameY="0" frameWidth="267" frameHeight="251"/>
+	<SubTexture name="VoiceBox Left Note0002" x="1649" y="421" width="265" height="251" frameX="-2" frameY="0" frameWidth="267" frameHeight="251"/>
+	<SubTexture name="VoiceBox Left Note0003" x="1649" y="421" width="265" height="251" frameX="-2" frameY="0" frameWidth="267" frameHeight="251"/>
+	<SubTexture name="VoiceBox Left Note0004" x="1649" y="421" width="265" height="251" frameX="-2" frameY="0" frameWidth="267" frameHeight="251"/>
+	<SubTexture name="VoiceBox Left Note0005" x="1649" y="421" width="265" height="251" frameX="-2" frameY="0" frameWidth="267" frameHeight="251"/>
+	<SubTexture name="VoiceBox Left Note0006" x="1649" y="421" width="265" height="251" frameX="-2" frameY="0" frameWidth="267" frameHeight="251"/>
+	<SubTexture name="VoiceBox Left Note0007" x="1649" y="421" width="265" height="251" frameX="-2" frameY="0" frameWidth="267" frameHeight="251"/>
+	<SubTexture name="VoiceBox Left Note0008" x="1649" y="421" width="265" height="251" frameX="-2" frameY="0" frameWidth="267" frameHeight="251"/>
+	<SubTexture name="VoiceBox Left Note0009" x="1649" y="421" width="265" height="251" frameX="-2" frameY="0" frameWidth="267" frameHeight="251"/>
+	<SubTexture name="VoiceBox Left Note0010" x="1649" y="421" width="265" height="251" frameX="-2" frameY="0" frameWidth="267" frameHeight="251"/>
+	<SubTexture name="VoiceBox Left Note0011" x="1649" y="421" width="265" height="251" frameX="-2" frameY="0" frameWidth="267" frameHeight="251"/>
+	<SubTexture name="VoiceBox Left Note0012" x="1649" y="421" width="265" height="251" frameX="-2" frameY="0" frameWidth="267" frameHeight="251"/>
+	<SubTexture name="VoiceBox Left Note0013" x="1649" y="421" width="265" height="251" frameX="-2" frameY="0" frameWidth="267" frameHeight="251"/>
+	<SubTexture name="VoiceBox Left Note0014" x="1649" y="421" width="265" height="251" frameX="-2" frameY="0" frameWidth="267" frameHeight="251"/>
+	<SubTexture name="VoiceBox Right Note0000" x="0" y="843" width="262" height="251" frameX="0" frameY="0" frameWidth="267" frameHeight="251"/>
+	<SubTexture name="VoiceBox Right Note0001" x="0" y="843" width="262" height="251" frameX="0" frameY="0" frameWidth="267" frameHeight="251"/>
+	<SubTexture name="VoiceBox Right Note0002" x="262" y="843" width="265" height="251" frameX="-2" frameY="0" frameWidth="267" frameHeight="251"/>
+	<SubTexture name="VoiceBox Right Note0003" x="262" y="843" width="265" height="251" frameX="-2" frameY="0" frameWidth="267" frameHeight="251"/>
+	<SubTexture name="VoiceBox Right Note0004" x="262" y="843" width="265" height="251" frameX="-2" frameY="0" frameWidth="267" frameHeight="251"/>
+	<SubTexture name="VoiceBox Right Note0005" x="262" y="843" width="265" height="251" frameX="-2" frameY="0" frameWidth="267" frameHeight="251"/>
+	<SubTexture name="VoiceBox Right Note0006" x="262" y="843" width="265" height="251" frameX="-2" frameY="0" frameWidth="267" frameHeight="251"/>
+	<SubTexture name="VoiceBox Right Note0007" x="262" y="843" width="265" height="251" frameX="-2" frameY="0" frameWidth="267" frameHeight="251"/>
+	<SubTexture name="VoiceBox Right Note0008" x="262" y="843" width="265" height="251" frameX="-2" frameY="0" frameWidth="267" frameHeight="251"/>
+	<SubTexture name="VoiceBox Right Note0009" x="262" y="843" width="265" height="251" frameX="-2" frameY="0" frameWidth="267" frameHeight="251"/>
+	<SubTexture name="VoiceBox Right Note0010" x="262" y="843" width="265" height="251" frameX="-2" frameY="0" frameWidth="267" frameHeight="251"/>
+	<SubTexture name="VoiceBox Right Note0011" x="262" y="843" width="265" height="251" frameX="-2" frameY="0" frameWidth="267" frameHeight="251"/>
+	<SubTexture name="VoiceBox Right Note0012" x="262" y="843" width="265" height="251" frameX="-2" frameY="0" frameWidth="267" frameHeight="251"/>
+	<SubTexture name="VoiceBox Right Note0013" x="262" y="843" width="265" height="251" frameX="-2" frameY="0" frameWidth="267" frameHeight="251"/>
+	<SubTexture name="VoiceBox Right Note0014" x="262" y="843" width="265" height="251" frameX="-2" frameY="0" frameWidth="267" frameHeight="251"/>
+	<SubTexture name="VoiceBox Up Note0000" x="527" y="843" width="416" height="174" frameX="0" frameY="-10" frameWidth="422" frameHeight="184"/>
+	<SubTexture name="VoiceBox Up Note0001" x="527" y="843" width="416" height="174" frameX="0" frameY="-10" frameWidth="422" frameHeight="184"/>
+	<SubTexture name="VoiceBox Up Note0002" x="943" y="843" width="401" height="184" frameX="-21" frameY="0" frameWidth="422" frameHeight="184"/>
+	<SubTexture name="VoiceBox Up Note0003" x="943" y="843" width="401" height="184" frameX="-21" frameY="0" frameWidth="422" frameHeight="184"/>
+	<SubTexture name="VoiceBox Up Note0004" x="943" y="843" width="401" height="184" frameX="-21" frameY="0" frameWidth="422" frameHeight="184"/>
+	<SubTexture name="VoiceBox Up Note0005" x="943" y="843" width="401" height="184" frameX="-21" frameY="0" frameWidth="422" frameHeight="184"/>
+	<SubTexture name="VoiceBox Up Note0006" x="943" y="843" width="401" height="184" frameX="-21" frameY="0" frameWidth="422" frameHeight="184"/>
+	<SubTexture name="VoiceBox Up Note0007" x="943" y="843" width="401" height="184" frameX="-21" frameY="0" frameWidth="422" frameHeight="184"/>
+	<SubTexture name="VoiceBox Up Note0008" x="943" y="843" width="401" height="184" frameX="-21" frameY="0" frameWidth="422" frameHeight="184"/>
+	<SubTexture name="VoiceBox Up Note0009" x="943" y="843" width="401" height="184" frameX="-21" frameY="0" frameWidth="422" frameHeight="184"/>
+	<SubTexture name="VoiceBox Up Note0010" x="943" y="843" width="401" height="184" frameX="-21" frameY="0" frameWidth="422" frameHeight="184"/>
+	<SubTexture name="VoiceBox Up Note0011" x="943" y="843" width="401" height="184" frameX="-21" frameY="0" frameWidth="422" frameHeight="184"/>
+	<SubTexture name="VoiceBox Up Note0012" x="943" y="843" width="401" height="184" frameX="-21" frameY="0" frameWidth="422" frameHeight="184"/>
+	<SubTexture name="VoiceBox Up Note0013" x="943" y="843" width="401" height="184" frameX="-21" frameY="0" frameWidth="422" frameHeight="184"/>
+	<SubTexture name="VoiceBox Up Note0014" x="943" y="843" width="401" height="184" frameX="-21" frameY="0" frameWidth="422" frameHeight="184"/>
+</TextureAtlas>

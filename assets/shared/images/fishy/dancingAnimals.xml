@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="dancingAnimals.png">
+	<!-- Created with Adobe Animate version 20.0.0.17400 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="dancingAnimals0000" x="0" y="0" width="1094" height="398" frameX="0" frameY="0" frameWidth="1094" frameHeight="399"/>
+	<SubTexture name="dancingAnimals0001" x="0" y="0" width="1094" height="398" frameX="0" frameY="0" frameWidth="1094" frameHeight="399"/>
+	<SubTexture name="dancingAnimals0002" x="0" y="0" width="1094" height="398" frameX="0" frameY="0" frameWidth="1094" frameHeight="399"/>
+	<SubTexture name="dancingAnimals0003" x="0" y="398" width="1094" height="387" frameX="0" frameY="-12" frameWidth="1094" frameHeight="399"/>
+	<SubTexture name="dancingAnimals0004" x="0" y="398" width="1094" height="387" frameX="0" frameY="-12" frameWidth="1094" frameHeight="399"/>
+	<SubTexture name="dancingAnimals0005" x="0" y="398" width="1094" height="387" frameX="0" frameY="-12" frameWidth="1094" frameHeight="399"/>
+	<SubTexture name="dancingAnimals0006" x="0" y="398" width="1094" height="387" frameX="0" frameY="-12" frameWidth="1094" frameHeight="399"/>
+	<SubTexture name="dancingAnimals0007" x="0" y="398" width="1094" height="387" frameX="0" frameY="-12" frameWidth="1094" frameHeight="399"/>
+	<SubTexture name="dancingAnimals0008" x="0" y="398" width="1094" height="387" frameX="0" frameY="-12" frameWidth="1094" frameHeight="399"/>
+	<SubTexture name="dancingAnimals0009" x="0" y="398" width="1094" height="387" frameX="0" frameY="-12" frameWidth="1094" frameHeight="399"/>
+	<SubTexture name="dancingAnimals0010" x="0" y="398" width="1094" height="387" frameX="0" frameY="-12" frameWidth="1094" frameHeight="399"/>
+	<SubTexture name="dancingAnimals0011" x="0" y="0" width="1094" height="398" frameX="0" frameY="0" frameWidth="1094" frameHeight="399"/>
+	<SubTexture name="dancingAnimals0012" x="0" y="0" width="1094" height="398" frameX="0" frameY="0" frameWidth="1094" frameHeight="399"/>
+	<SubTexture name="dancingAnimals0013" x="0" y="0" width="1094" height="398" frameX="0" frameY="0" frameWidth="1094" frameHeight="399"/>
+	<SubTexture name="dancingAnimals0014" x="0" y="0" width="1094" height="398" frameX="0" frameY="0" frameWidth="1094" frameHeight="399"/>
+	<SubTexture name="dancingAnimals0015" x="0" y="0" width="1094" height="398" frameX="0" frameY="0" frameWidth="1094" frameHeight="399"/>
+</TextureAtlas>
