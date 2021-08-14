@@ -28,8 +28,13 @@ class DialogueBox extends FlxSpriteGroup
 
 	public var finishThing:Void->Void;
 
+	var textBoxSizeFix:Float = 7;
+
 	var portraitLeft:FlxSprite;
 	var portraitRight:FlxSprite;
+	var portraitLeftFishy:FlxSprite;
+	var portraitRightBF:FlxSprite;
+	var portraitLeftVB:FlxSprite;
 
 	var handSelect:FlxSprite;
 	var bgFade:FlxSprite;
@@ -42,6 +47,12 @@ class DialogueBox extends FlxSpriteGroup
 		{
 			case 'senpai':
 				FlxG.sound.playMusic(Paths.music('Lunchbox'), 0);
+				FlxG.sound.music.fadeIn(1, 0, 0.8);
+			case 'fishy-tank':
+				FlxG.sound.playMusic(Paths.music('DialogSong', 'shared'), 0);
+				FlxG.sound.music.fadeIn(1, 0, 0.8);
+			case 'underwater':
+				FlxG.sound.playMusic(Paths.music('DialogSongUnderwater', 'shared'), 0);
 				FlxG.sound.music.fadeIn(1, 0, 0.8);
 			case 'thorns':
 				FlxG.sound.playMusic(Paths.music('LunchboxScary'), 0);
@@ -60,7 +71,14 @@ class DialogueBox extends FlxSpriteGroup
 				bgFade.alpha = 0.7;
 		}, 5);
 
-		box = new FlxSprite(-20, 45);
+		if(PlayState.SONG.song.toLowerCase()=='fishy-tank' || PlayState.SONG.song.toLowerCase()=='underwater' || PlayState.SONG.song.toLowerCase()=='unspeakable')
+		{
+			box = new FlxSprite(-20, 400);
+		}
+		else
+		{
+			box = new FlxSprite(-20, 45);
+		}
 		
 		var hasDialog = false;
 		switch (PlayState.SONG.song.toLowerCase())
@@ -87,6 +105,27 @@ class DialogueBox extends FlxSpriteGroup
 				var face:FlxSprite = new FlxSprite(320, 170).loadGraphic(Paths.image('weeb/spiritFaceForward'));
 				face.setGraphicSize(Std.int(face.width * 6));
 				add(face);
+			case 'fishy-tank':
+				hasDialog = true;
+				box.frames = Paths.getSparrowAtlas('speech_bubble_talking', 'shared');
+				box.setGraphicSize(Std.int(box.width / textBoxSizeFix));
+				box.updateHitbox();
+				box.animation.addByPrefix('normalOpen', 'Speech Bubble Normal Open', 24, false);
+				box.animation.addByIndices('normal', 'Speech Bubble Normal Open', [4], "", 24);		
+			case 'underwater':
+				hasDialog = true;
+				box.frames = Paths.getSparrowAtlas('speech_bubble_talking', 'shared');
+				box.setGraphicSize(Std.int(box.width / textBoxSizeFix));
+				box.updateHitbox();
+				box.animation.addByPrefix('normalOpen', 'Speech Bubble Normal Open', 24, false);
+				box.animation.addByIndices('normal', 'Speech Bubble Normal Open', [4], "", 24);				
+			case 'unspeakable':
+				hasDialog = true;
+				box.frames = Paths.getSparrowAtlas('speech_bubble_talking', 'shared');
+				box.setGraphicSize(Std.int(box.width / textBoxSizeFix));
+				box.updateHitbox();
+				box.animation.addByPrefix('normalOpen', 'Speech Bubble Normal Open', 24, false);
+				box.animation.addByIndices('normal', 'Speech Bubble Normal Open', [4], "", 24);			
 		}
 
 		this.dialogueList = dialogueList;
@@ -103,14 +142,29 @@ class DialogueBox extends FlxSpriteGroup
 		add(portraitLeft);
 		portraitLeft.visible = false;
 
-		portraitRight = new FlxSprite(0, 40);
-		portraitRight.frames = Paths.getSparrowAtlas('weeb/bfPortrait');
-		portraitRight.animation.addByPrefix('enter', 'Boyfriend portrait enter', 24, false);
-		portraitRight.setGraphicSize(Std.int(portraitRight.width * PlayState.daPixelZoom * 0.9));
-		portraitRight.updateHitbox();
-		portraitRight.scrollFactor.set();
-		add(portraitRight);
-		portraitRight.visible = false;
+		portraitLeftFishy = new FlxSprite(-20, 170);
+		portraitLeftFishy.frames = Paths.getSparrowAtlas('fishyPortrait', 'shared');
+		portraitLeftFishy.animation.addByPrefix('enter', 'fishy Portrait ', 24, false);
+		portraitLeftFishy.updateHitbox();
+		portraitLeftFishy.scrollFactor.set();
+		add(portraitLeftFishy);
+		portraitLeftFishy.visible = false;
+
+		portraitLeftVB = new FlxSprite(-20, 170);
+		portraitLeftVB.frames = Paths.getSparrowAtlas('voiceBoxPortrait', 'shared');
+		portraitLeftVB.animation.addByPrefix('enter', 'voiceBox Portrait ', 24, false);
+		portraitLeftVB.updateHitbox();
+		portraitLeftVB.scrollFactor.set();
+		add(portraitLeftVB);
+		portraitLeftVB.visible = false;
+
+		portraitRightBF = new FlxSprite(0, 40);
+		portraitRightBF.frames = Paths.getSparrowAtlas('boyfriendPortrait', 'shared');
+		portraitRightBF.animation.addByPrefix('enter', 'BF Enter ', 24, false);
+		portraitRightBF.updateHitbox();
+		portraitRightBF.scrollFactor.set();
+		add(portraitRightBF);
+		portraitRightBF.visible = false;
 		
 		box.animation.play('normalOpen');
 		box.setGraphicSize(Std.int(box.width * PlayState.daPixelZoom * 0.9));
@@ -177,7 +231,7 @@ class DialogueBox extends FlxSpriteGroup
 			dialogueStarted = true;
 		}
 
-		if (FlxG.keys.justPressed.ANY  && dialogueStarted == true)
+		if (PlayerSettings.player1.controls.ACCEPT && dialogueStarted == true)
 		{
 			remove(dialogue);
 				
@@ -196,8 +250,18 @@ class DialogueBox extends FlxSpriteGroup
 					{
 						box.alpha -= 1 / 5;
 						bgFade.alpha -= 1 / 5 * 0.7;
-						portraitLeft.visible = false;
-						portraitRight.visible = false;
+						if (PlayState.SONG.song.toLowerCase() == 'senpai' || PlayState.SONG.song.toLowerCase() == 'thorns' || PlayState.SONG.song.toLowerCase() == 'roses'){
+							portraitLeft.visible = false;
+							portraitRight.visible = false;
+						}						
+						if (PlayState.SONG.song.toLowerCase() == 'fishy-tank' || PlayState.SONG.song.toLowerCase() == 'underwater'){
+							portraitLeftFishy.visible = false;
+							portraitRightBF.visible = false;
+						}						
+						if (PlayState.SONG.song.toLowerCase() == 'unspeakable'){
+							portraitLeftVB.visible = false;
+							portraitRightBF.visible = false;
+						}
 						swagDialogue.alpha -= 1 / 5;
 						dropText.alpha = swagDialogue.alpha;
 					}, 5);
@@ -241,12 +305,33 @@ class DialogueBox extends FlxSpriteGroup
 					portraitLeft.visible = true;
 					portraitLeft.animation.play('enter');
 				}
+			case 'fishy':
+				portraitRightBF.visible = false;
+				if (!portraitLeftFishy.visible)
+				{
+					portraitLeftFishy.visible = true;
+					portraitLeftFishy.animation.play('enter');
+				}
+			case 'voicebox':
+				portraitRightBF.visible = false;
+				if (!portraitLeftVB.visible)
+				{
+					portraitLeftVB.visible = true;
+					portraitLeftVB.animation.play('enter');
+				}
 			case 'bf':
 				portraitLeft.visible = false;
 				if (!portraitRight.visible)
 				{
 					portraitRight.visible = true;
 					portraitRight.animation.play('enter');
+				}
+			case 'bf2':
+				portraitLeftFishy.visible = false;
+				if (!portraitRightBF.visible)
+				{
+					portraitRightBF.visible = true;
+					portraitRightBF.animation.play('enter');
 				}
 		}
 	}

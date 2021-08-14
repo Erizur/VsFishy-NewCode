@@ -495,6 +495,57 @@ class Character extends FlxSprite
 				addOffset("singDOWN-alt", -30, -27);
 
 				playAnim('idle');
+			case 'fishy':
+				// DAD ANIMATION LOADING CODE
+				tex = Paths.getSparrowAtlas('fishy/Fish_Assets', 'shared');
+				frames = tex;
+				animation.addByPrefix('idle', 'Fish Idle', 24);
+				animation.addByPrefix('singUP', 'Fish Up Note', 24);
+				animation.addByPrefix('singRIGHT', 'Fish Right Note', 24);
+				animation.addByPrefix('singDOWN', 'Fish Down Note', 24);
+				animation.addByPrefix('singLEFT', 'Fish Left Note', 24);
+
+				addOffset('idle');
+				addOffset("singUP", 0, 0);
+				addOffset("singRIGHT", 0, 0);
+				addOffset("singLEFT", 0, 0);
+				addOffset("singDOWN", 0, 0);
+
+				playAnim('idle');
+			case 'voicebox':
+				// DAD ANIMATION LOADING CODE
+				tex = Paths.getSparrowAtlas('fishy/VoiceBox_Assets', 'shared');
+				frames = tex;
+				animation.addByPrefix('idle', 'VoiceBox Idle', 24);
+				animation.addByPrefix('singUP', 'VoiceBox Up Note', 24);
+				animation.addByPrefix('singRIGHT', 'VoiceBox Right Note', 24);
+				animation.addByPrefix('singDOWN', 'VoiceBox Down Note', 24);
+				animation.addByPrefix('singLEFT', 'VoiceBox Left Note', 24);
+
+				addOffset('idle', 0, 30);
+				addOffset("singUP", 0, -110);
+				addOffset("singRIGHT", 0, -110);
+				addOffset("singLEFT", 0, -110);
+				addOffset("singDOWN", 0, -110);
+
+				playAnim('idle');
+			case 'peppa':
+				// DAD ANIMATION LOADING CODE
+				tex = Paths.getSparrowAtlas('fishy/Peppa_Assets', 'shared');
+				frames = tex;
+				animation.addByPrefix('idle', 'Peppa Idle', 24);
+				animation.addByPrefix('singUP', 'Peppa Up Note', 24);
+				animation.addByPrefix('singRIGHT', 'Peppa Right Note', 24);
+				animation.addByPrefix('singDOWN', 'Peppa Down Note', 24);
+				animation.addByPrefix('singLEFT', 'Peppab Left Note', 24);
+
+				addOffset('idle', 0, 25);
+				addOffset("singUP", 0, 25);
+				addOffset("singRIGHT", 0, 25);
+				addOffset("singLEFT", 0, 25);
+				addOffset("singDOWN", 0, 25);
+
+				playAnim('idle');
 		}
 
 		dance();

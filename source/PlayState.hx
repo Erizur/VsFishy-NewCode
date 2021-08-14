@@ -163,6 +163,10 @@ class PlayState extends MusicBeatState
 	public static var timeCurrently:Float = 0;
 	public static var timeCurrentlyR:Float = 0;
 
+	public static var amogus:Int = 0;
+	var dancingAnimals:FlxSprite;
+	var fishySad:FlxSprite;
+
 	override public function create()
 	{
 
@@ -267,6 +271,12 @@ class PlayState extends MusicBeatState
 				dialogue = CoolUtil.coolTextFile(Paths.txt('roses/rosesDialogue'));
 			case 'thorns':
 				dialogue = CoolUtil.coolTextFile(Paths.txt('thorns/thornsDialogue'));
+			case 'fishy-tank':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('fishy-tank/fishyDialogue'));
+			case 'underwater':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('underwater/underwaterDialogue'));
+			case 'unspeakable':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('unspeakable/unspeakableDialogue'));
 		}
 
 		if (SONG.song.toLowerCase() == 'spookeez' || SONG.song.toLowerCase() == 'monster' || SONG.song.toLowerCase() == 'south')
@@ -580,6 +590,38 @@ class PlayState extends MusicBeatState
 				add(waveSpriteFG);
 			 */
 		}
+		else if (SONG.song.toLowerCase() == 'fishy-tank' || SONG.song.toLowerCase() == 'underwater')
+			{
+				curStage = 'petshop';
+				defaultCamZoom = 0.9;
+				var bg:FlxSprite = new FlxSprite(-700, -300).loadGraphic(Paths.image('fishy/PetShopBG','shared'));
+				bg.antialiasing = true;
+				bg.scale.set(0.8, 0.8);
+				bg.active = false;
+				add(bg);
+				dancingAnimals = new FlxSprite(200, 200);
+				dancingAnimals.frames = Paths.getSparrowAtlas('fishy/dancingAnimals','shared');
+				dancingAnimals.animation.addByPrefix('dancingAnimals', 'dancingAnimals', 24, true);
+				dancingAnimals.animation.play('dancingAnimals');
+				add(dancingAnimals);
+					
+			}
+		else if (SONG.song.toLowerCase() == 'unspeakable')
+			{
+				curStage = 'petshop-fishysad';
+				defaultCamZoom = 0.9;
+				var bg:FlxSprite = new FlxSprite(-700, -300).loadGraphic(Paths.image('fishy/PetShopBGSad','shared'));
+				bg.antialiasing = true;
+				bg.scale.set(0.8, 0.8);
+				bg.active = false;
+				add(bg);
+				fishySad = new FlxSprite(-10, 400);
+				fishySad.frames = Paths.getSparrowAtlas('fishy/Fish_Sad','shared');
+				fishySad.animation.addByPrefix('fishSad', 'Fish Sad', 24, true);
+				fishySad.animation.play('fishSad');
+				add(fishySad);
+					
+			}
 		else
 		{
 			defaultCamZoom = 0.9;
@@ -668,6 +710,15 @@ class PlayState extends MusicBeatState
 				dad.x -= 150;
 				dad.y += 100;
 				camPos.set(dad.getGraphicMidpoint().x + 300, dad.getGraphicMidpoint().y);
+			case 'fishy':
+				dad.y += 400;
+				camPos.x += 600;
+			case 'voicebox':
+				dad.y += 400;
+				camPos.x += 600;
+			case 'peppa':
+				dad.y += 400;
+				camPos.x += 600;
 		}
 
 
@@ -892,6 +943,12 @@ class PlayState extends MusicBeatState
 					schoolIntro(doof);
 				case 'thorns':
 					schoolIntro(doof);
+				case 'fishy-tank':
+					schoolIntro(doof);
+				case 'underwater':
+					schoolIntro(doof);
+				case 'unspeakable':
+					schoolIntro(doof);
 				default:
 					startCountdown();
 			}
@@ -938,6 +995,15 @@ class PlayState extends MusicBeatState
 			}
 		}
 
+		if (StringTools.replace(PlayState.SONG.song, " ", "-").toLowerCase() == 'unspeakable')
+			{
+				trace(amogus);
+				if (amogus == 0)
+				{
+					FlxG.switchState(new VideoState('assets/videos/fishycutscene.webm', new PlayState()));
+					amogus = amogus + 1;
+				}
+			}
 		new FlxTimer().start(0.3, function(tmr:FlxTimer)
 		{
 			black.alpha -= 0.15;
@@ -1702,7 +1768,19 @@ class PlayState extends MusicBeatState
 			vocals.stop();
 			FlxG.sound.music.stop();
 
-			openSubState(new GameOverSubstate(boyfriend.getScreenPosition().x, boyfriend.getScreenPosition().y));
+			if (StringTools.replace(PlayState.SONG.song, " ", "-").toLowerCase() == 'unspeakable' || StringTools.replace(PlayState.SONG.song, " ", "-").toLowerCase() == 'underwater')
+				{
+					FlxG.switchState(new VideoState('assets/videos/omgjumpscare.webm', new ExitState()));
+				}
+			else if (StringTools.replace(PlayState.SONG.song, " ", "-").toLowerCase() == 'refreshed' && isStoryMode == true)
+				{
+					endSong();
+				}
+			else
+				{
+					openSubState(new GameOverSubstate(boyfriend.getScreenPosition().x, boyfriend.getScreenPosition().y));
+				}
+
 
 			#if desktop
 			// Game Over doesn't get his own variable because it's only used here

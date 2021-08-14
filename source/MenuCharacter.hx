@@ -22,6 +22,7 @@ class MenuCharacter extends FlxSprite
 		animation.addByPrefix('dad', "Dad idle dance BLACK LINE", 24);
 		animation.addByPrefix('spooky', "spooky dance idle BLACK LINES", 24);
 		animation.addByPrefix('pico', "Pico Idle Dance", 24);
+		animation.addByPrefix('fishy', "Fish Idle Black Lines0", 24);
 		animation.addByPrefix('mom', "Mom Idle BLACK LINES", 24);
 		animation.addByPrefix('parents-christmas', "Parent Christmas Idle", 24);
 		animation.addByPrefix('senpai', "SENPAI idle Black Lines", 24);

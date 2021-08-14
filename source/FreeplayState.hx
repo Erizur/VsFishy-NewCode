@@ -72,6 +72,10 @@ class FreeplayState extends MusicBeatState
 			
 			addWeek(['Senpai', 'Roses', 'Thorns'], 6, ['senpai', 'senpai', 'spirit']);
 
+			addWeek(['Fishy-Tank', 'Underwater', 'Unspeakable'], 7, ['fishy', 'fishy', 'voicebox']);
+			addWeek(['Walkeing', 'Refreshed', 'Fish-Box'], 7, ['fishy', 'fishy', 'fishy']);
+			addWeek(['HIFD', 'Snort', 'Rushe'], 7, ['fishy', 'peppa', 'fishy']);
+
 		// LOAD MUSIC
 
 		// LOAD CHARACTERS
