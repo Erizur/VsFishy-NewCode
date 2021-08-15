@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="FishyEvil_Assets.png">
+	<!-- Created with Adobe Animate version 20.0.0.17400 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="EvilFish Down Note0000" x="0" y="0" width="176" height="111"/>
+	<SubTexture name="EvilFish Down Note0001" x="0" y="0" width="176" height="111"/>
+	<SubTexture name="EvilFish Down Note0002" x="0" y="0" width="176" height="111"/>
+	<SubTexture name="EvilFish Down Note0003" x="0" y="0" width="176" height="111"/>
+	<SubTexture name="EvilFish Down Note0004" x="0" y="0" width="176" height="111"/>
+	<SubTexture name="EvilFish Down Note0005" x="0" y="0" width="176" height="111"/>
+	<SubTexture name="EvilFish Down Note0006" x="0" y="0" width="176" height="111"/>
+	<SubTexture name="EvilFish Down Note0007" x="0" y="0" width="176" height="111"/>
+	<SubTexture name="EvilFish Down Note0008" x="0" y="0" width="176" height="111"/>
+	<SubTexture name="EvilFish Down Note0009" x="0" y="0" width="176" height="111"/>
+	<SubTexture name="EvilFish Idle0000" x="176" y="0" width="192" height="96" frameX="0" frameY="0" frameWidth="205" frameHeight="96"/>
+	<SubTexture name="EvilFish Idle0001" x="176" y="0" width="192" height="96" frameX="0" frameY="0" frameWidth="205" frameHeight="96"/>
+	<SubTexture name="EvilFish Idle0002" x="0" y="111" width="187" height="96" frameX="-9" frameY="0" frameWidth="205" frameHeight="96"/>
+	<SubTexture name="EvilFish Idle0003" x="0" y="111" width="187" height="96" frameX="-9" frameY="0" frameWidth="205" frameHeight="96"/>
+	<SubTexture name="EvilFish Idle0004" x="187" y="111" width="188" height="96" frameX="-17" frameY="0" frameWidth="205" frameHeight="96"/>
+	<SubTexture name="EvilFish Idle0005" x="187" y="111" width="188" height="96" frameX="-17" frameY="0" frameWidth="205" frameHeight="96"/>
+	<SubTexture name="EvilFish Idle0006" x="0" y="207" width="185" height="96" frameX="-15" frameY="0" frameWidth="205" frameHeight="96"/>
+	<SubTexture name="EvilFish Idle0007" x="0" y="207" width="185" height="96" frameX="-15" frameY="0" frameWidth="205" frameHeight="96"/>
+	<SubTexture name="EvilFish Idle0008" x="0" y="207" width="185" height="96" frameX="-15" frameY="0" frameWidth="205" frameHeight="96"/>
+	<SubTexture name="EvilFish Idle0009" x="187" y="111" width="188" height="96" frameX="-17" frameY="0" frameWidth="205" frameHeight="96"/>
+	<SubTexture name="EvilFish Idle0010" x="187" y="111" width="188" height="96" frameX="-17" frameY="0" frameWidth="205" frameHeight="96"/>
+	<SubTexture name="EvilFish Idle0011" x="0" y="111" width="187" height="96" frameX="-9" frameY="0" frameWidth="205" frameHeight="96"/>
+	<SubTexture name="EvilFish Idle0012" x="0" y="111" width="187" height="96" frameX="-9" frameY="0" frameWidth="205" frameHeight="96"/>
+	<SubTexture name="EvilFish Idle0013" x="176" y="0" width="192" height="96" frameX="0" frameY="0" frameWidth="205" frameHeight="96"/>
+	<SubTexture name="EvilFish Left Note0000" x="185" y="207" width="176" height="104"/>
+	<SubTexture name="EvilFish Left Note0001" x="185" y="207" width="176" height="104"/>
+	<SubTexture name="EvilFish Left Note0002" x="185" y="207" width="176" height="104"/>
+	<SubTexture name="EvilFish Left Note0003" x="185" y="207" width="176" height="104"/>
+	<SubTexture name="EvilFish Left Note0004" x="185" y="207" width="176" height="104"/>
+	<SubTexture name="EvilFish Left Note0005" x="185" y="207" width="176" height="104"/>
+	<SubTexture name="EvilFish Left Note0006" x="185" y="207" width="176" height="104"/>
+	<SubTexture name="EvilFish Left Note0007" x="185" y="207" width="176" height="104"/>
+	<SubTexture name="EvilFish Left Note0008" x="185" y="207" width="176" height="104"/>
+	<SubTexture name="EvilFish Left Note0009" x="185" y="207" width="176" height="104"/>
+	<SubTexture name="EvilFish Right Note0000" x="0" y="311" width="196" height="93"/>
+	<SubTexture name="EvilFish Right Note0001" x="0" y="311" width="196" height="93"/>
+	<SubTexture name="EvilFish Right Note0002" x="0" y="311" width="196" height="93"/>
+	<SubTexture name="EvilFish Right Note0003" x="0" y="311" width="196" height="93"/>
+	<SubTexture name="EvilFish Right Note0004" x="0" y="311" width="196" height="93"/>
+	<SubTexture name="EvilFish Right Note0005" x="0" y="311" width="196" height="93"/>
+	<SubTexture name="EvilFish Right Note0006" x="0" y="311" width="196" height="93"/>
+	<SubTexture name="EvilFish Right Note0007" x="0" y="311" width="196" height="93"/>
+	<SubTexture name="EvilFish Right Note0008" x="0" y="311" width="196" height="93"/>
+	<SubTexture name="EvilFish Right Note0009" x="0" y="311" width="196" height="93"/>
+	<SubTexture name="EvilFish Up Note0000" x="196" y="311" width="177" height="106"/>
+	<SubTexture name="EvilFish Up Note0001" x="196" y="311" width="177" height="106"/>
+	<SubTexture name="EvilFish Up Note0002" x="196" y="311" width="177" height="106"/>
+	<SubTexture name="EvilFish Up Note0003" x="196" y="311" width="177" height="106"/>
+	<SubTexture name="EvilFish Up Note0004" x="196" y="311" width="177" height="106"/>
+	<SubTexture name="EvilFish Up Note0005" x="196" y="311" width="177" height="106"/>
+	<SubTexture name="EvilFish Up Note0006" x="196" y="311" width="177" height="106"/>
+	<SubTexture name="EvilFish Up Note0007" x="196" y="311" width="177" height="106"/>
+	<SubTexture name="EvilFish Up Note0008" x="196" y="311" width="177" height="106"/>
+	<SubTexture name="EvilFish Up Note0009" x="196" y="311" width="177" height="106"/>
+</TextureAtlas>
