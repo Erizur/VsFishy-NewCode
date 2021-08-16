@@ -622,6 +622,85 @@ class PlayState extends MusicBeatState
 				add(fishySad);
 					
 			}
+		else if (SONG.song.toLowerCase() == 'walkeing' || SONG.song.toLowerCase() == 'refreshed')
+			{
+				curStage = 'park';
+				defaultCamZoom = 0.9;
+				var bg:FlxSprite = new FlxSprite(-700, -300).loadGraphic(Paths.image('fishy/ParkBG1','shared'));
+				bg.antialiasing = true;
+				bg.scale.set(0.8, 0.8);
+				bg.active = false;
+				add(bg);
+				var bg3:FlxSprite = new FlxSprite(-700, -450).loadGraphic(Paths.image('fishy/ParkBG3','shared'));
+				bg3.antialiasing = true;
+				bg3.scale.set(0.8, 0.8);
+				bg3.active = false;
+				add(bg3);
+				var bg2:FlxSprite = new FlxSprite(-650, 500).loadGraphic(Paths.image('fishy/ParkBG2','shared'));
+				bg2.antialiasing = true;
+				bg2.scale.set(0.8, 0.8);
+				bg2.active = false;
+				add(bg2);
+					
+			}
+		else if (SONG.song.toLowerCase() == 'fish-box')
+			{
+				curStage = 'park';
+				defaultCamZoom = 0.9;
+				var bg:FlxSprite = new FlxSprite(-700, -300).loadGraphic(Paths.image('fishy/ParkBG4','shared'));
+				bg.antialiasing = true;
+				bg.scale.set(0.8, 0.8);
+				bg.active = false;
+				add(bg);
+				var bg3:FlxSprite = new FlxSprite(-700, -450).loadGraphic(Paths.image('fishy/ParkBG3','shared'));
+				bg3.antialiasing = true;
+				bg3.scale.set(0.8, 0.8);
+				bg3.active = false;
+				add(bg3);
+				var bg2:FlxSprite = new FlxSprite(-650, 500).loadGraphic(Paths.image('fishy/ParkBG2','shared'));
+				bg2.antialiasing = true;
+				bg2.scale.set(0.8, 0.8);
+				bg2.active = false;
+				add(bg2);
+					
+			}
+		else if (SONG.song.toLowerCase() == 'hifd')
+			{
+				curStage = 'petshop';
+				defaultCamZoom = 0.9;
+				var bg:FlxSprite = new FlxSprite(-700, -300).loadGraphic(Paths.image('fishy/PetShopBG','shared'));
+				bg.antialiasing = true;
+				bg.scale.set(0.8, 0.8);
+				bg.active = false;
+				add(bg);
+				dancingAnimals = new FlxSprite(200, 200);
+				dancingAnimals.frames = Paths.getSparrowAtlas('fishy/dancingAnimals','shared');
+				dancingAnimals.animation.addByPrefix('dancingAnimals', 'dancingAnimals', 24, true);
+				dancingAnimals.animation.play('dancingAnimals');
+				add(dancingAnimals);
+					
+			}
+		else if (SONG.song.toLowerCase() == 'rushe')
+			{
+				curStage = 'park';
+				defaultCamZoom = 0.9;
+				var bg:FlxSprite = new FlxSprite(-700, -300).loadGraphic(Paths.image('fishy/ParkBG1','shared'));
+				bg.antialiasing = true;
+				bg.scale.set(0.8, 0.8);
+				bg.active = false;
+				add(bg);
+				var bg3:FlxSprite = new FlxSprite(-700, -450).loadGraphic(Paths.image('fishy/ParkBG3','shared'));
+				bg3.antialiasing = true;
+				bg3.scale.set(0.8, 0.8);
+				bg3.active = false;
+				add(bg3);
+				var bg2:FlxSprite = new FlxSprite(-650, 500).loadGraphic(Paths.image('fishy/ParkBG2','shared'));
+				bg2.antialiasing = true;
+				bg2.scale.set(0.8, 0.8);
+				bg2.active = false;
+				add(bg2);
+					
+			}
 		else
 		{
 			defaultCamZoom = 0.9;
@@ -711,6 +790,12 @@ class PlayState extends MusicBeatState
 				dad.y += 100;
 				camPos.set(dad.getGraphicMidpoint().x + 300, dad.getGraphicMidpoint().y);
 			case 'fishy':
+				dad.y += 400;
+				camPos.x += 600;
+			case 'fishy-three':
+				dad.y += 400;
+				camPos.x += 600;
+			case 'fishy-evil':
 				dad.y += 400;
 				camPos.x += 600;
 			case 'voicebox':

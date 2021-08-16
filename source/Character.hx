@@ -546,6 +546,40 @@ class Character extends FlxSprite
 				addOffset("singDOWN", 0, 25);
 
 				playAnim('idle');
+			case 'fishy-three':
+				// DAD ANIMATION LOADING CODE
+				tex = Paths.getSparrowAtlas('fishy/Fish_Three_Assets', 'shared');
+				frames = tex;
+				animation.addByPrefix('idle', 'Fish Three Idle', 24);
+				animation.addByPrefix('singUP', 'Fish Three Up Note', 24);
+				animation.addByPrefix('singRIGHT', 'Fish Three Right Note', 24);
+				animation.addByPrefix('singDOWN', 'Fish Three Down Note', 24);
+				animation.addByPrefix('singLEFT', 'Fish Three Left Note', 24);
+
+				addOffset('idle');
+				addOffset("singUP", 0, 0);
+				addOffset("singRIGHT", 0, 0);
+				addOffset("singLEFT", 0, 0);
+				addOffset("singDOWN", 0, 0);
+
+				playAnim('idle');
+			case 'fishy-evil':
+				// DAD ANIMATION LOADING CODE
+				tex = Paths.getSparrowAtlas('fishy/FishyEvil_Assets', 'shared');
+				frames = tex;
+				animation.addByPrefix('idle', 'EvilFish Idle', 24);
+				animation.addByPrefix('singUP', 'EvilFish Up Note', 24);
+				animation.addByPrefix('singRIGHT', 'EvilFish Right Note', 24);
+				animation.addByPrefix('singDOWN', 'EvilFish Down Note', 24);
+				animation.addByPrefix('singLEFT', 'EvilFish Left Note', 24);
+
+				addOffset('idle');
+				addOffset("singUP", 0, 0);
+				addOffset("singRIGHT", 0, 0);
+				addOffset("singLEFT", 0, 0);
+				addOffset("singDOWN", 0, 0);
+
+				playAnim('idle');
 		}
 
 		dance();

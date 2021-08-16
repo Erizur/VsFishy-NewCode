@@ -37,6 +37,8 @@ class HealthIcon extends FlxSprite
 		animation.add('fishy', [24, 25], 0, false, isPlayer);
 		animation.add('voicebox', [26, 27], 0, false, isPlayer);
 		animation.add('peppa', [28, 29], 0, false, isPlayer);
+		animation.add('fishy-three', [24, 25], 0, false, isPlayer);
+		animation.add('fishy-evil', [30, 31], 0, false, isPlayer);
 		animation.play(char);
 		scrollFactor.set();
 	}

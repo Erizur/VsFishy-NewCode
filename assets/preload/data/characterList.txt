@@ -18,3 +18,5 @@ spirit
 fishy
 voicebox
 peppa
+fishy-three
+fishy-evil
