@@ -151,6 +151,7 @@ class PlayState extends MusicBeatState
 	public static var campaignScore:Int = 0;
 
 	var defaultCamZoom:Float = 1.05;
+	private var floatshit:Float = 0;
 
 	public static var daPixelZoom:Float = 6;
 
@@ -277,6 +278,18 @@ class PlayState extends MusicBeatState
 				dialogue = CoolUtil.coolTextFile(Paths.txt('underwater/underwaterDialogue'));
 			case 'unspeakable':
 				dialogue = CoolUtil.coolTextFile(Paths.txt('unspeakable/unspeakableDialogue'));
+			case 'walkeing':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('walkeing/walkeingDialogue'));
+			case 'refreshed':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('refreshed/refreshedDialogue'));
+			case 'fish-box':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('fish-box/fishboxDialogue'));
+			case 'hifd':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('hifd/hifdDialogue'));
+			case 'snort':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('snort/snortDialogue'));
+			case 'rushe':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('rushe/rusheDialogue'));
 		}
 
 		if (SONG.song.toLowerCase() == 'spookeez' || SONG.song.toLowerCase() == 'monster' || SONG.song.toLowerCase() == 'south')
@@ -797,7 +810,7 @@ class PlayState extends MusicBeatState
 				camPos.x += 600;
 			case 'fishy-evil':
 				dad.y += 400;
-				camPos.x += 600;
+				camPos.x += 250;
 			case 'voicebox':
 				dad.y += 400;
 				camPos.x += 600;
@@ -1033,6 +1046,18 @@ class PlayState extends MusicBeatState
 				case 'underwater':
 					schoolIntro(doof);
 				case 'unspeakable':
+					schoolIntro(doof);
+				case 'walkeing':
+					schoolIntro(doof);
+				case 'refreshed':
+					schoolIntro(doof);
+				case 'fish-box':
+					schoolIntro(doof);
+				case 'hifd':
+					schoolIntro(doof);
+				case 'snort':
+					schoolIntro(doof);
+				case 'rushe':
 					schoolIntro(doof);
 				default:
 					startCountdown();
@@ -1608,6 +1633,7 @@ class PlayState extends MusicBeatState
 
 	override public function update(elapsed:Float)
 	{
+		floatshit += 0.1;
 		#if !debug
 		perfectMode = false;
 		#end
@@ -1639,6 +1665,10 @@ class PlayState extends MusicBeatState
 		}
 
 		super.update(elapsed);
+
+		if (dad.curCharacter == "fishy-evil"){
+			dad.y += Math.sin(floatshit);
+		}
 
 		if (FlxG.save.data.accuracyDisplay)
 		{
@@ -1853,11 +1883,11 @@ class PlayState extends MusicBeatState
 			vocals.stop();
 			FlxG.sound.music.stop();
 
-			if (StringTools.replace(PlayState.SONG.song, " ", "-").toLowerCase() == 'unspeakable' || StringTools.replace(PlayState.SONG.song, " ", "-").toLowerCase() == 'underwater')
+			if (StringTools.replace(PlayState.SONG.song, " ", "-").toLowerCase() == 'unspeakable' || StringTools.replace(PlayState.SONG.song, " ", "-").toLowerCase() == 'underwater' || StringTools.replace(PlayState.SONG.song, " ", "-").toLowerCase() == 'hifd')
 				{
 					FlxG.switchState(new VideoState('assets/videos/omgjumpscare.webm', new ExitState()));
 				}
-			else if (StringTools.replace(PlayState.SONG.song, " ", "-").toLowerCase() == 'refreshed' && isStoryMode == true)
+			else if (StringTools.replace(PlayState.SONG.song, " ", "-").toLowerCase() == 'refreshed' && isStoryMode == true && curBeat >= 540)
 				{
 					endSong();
 				}

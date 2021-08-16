@@ -35,6 +35,9 @@ class DialogueBox extends FlxSpriteGroup
 	var portraitLeftFishy:FlxSprite;
 	var portraitRightBF:FlxSprite;
 	var portraitLeftVB:FlxSprite;
+	var portraitLeftFishyThree:FlxSprite;
+	var portraitLeftFishyEvil:FlxSprite;
+	var portraitLeftPeppa:FlxSprite;
 
 	var handSelect:FlxSprite;
 	var bgFade:FlxSprite;
@@ -51,7 +54,16 @@ class DialogueBox extends FlxSpriteGroup
 			case 'fishy-tank':
 				FlxG.sound.playMusic(Paths.music('DialogSong', 'shared'), 0);
 				FlxG.sound.music.fadeIn(1, 0, 0.8);
+			case 'walkeing':
+				FlxG.sound.playMusic(Paths.music('DialogSong', 'shared'), 0);
+				FlxG.sound.music.fadeIn(1, 0, 0.8);
+			case 'refreshed':
+				FlxG.sound.playMusic(Paths.music('DialogSong', 'shared'), 0);
+				FlxG.sound.music.fadeIn(1, 0, 0.8);
 			case 'underwater':
+				FlxG.sound.playMusic(Paths.music('DialogSongUnderwater', 'shared'), 0);
+				FlxG.sound.music.fadeIn(1, 0, 0.8);
+			case 'hifd':
 				FlxG.sound.playMusic(Paths.music('DialogSongUnderwater', 'shared'), 0);
 				FlxG.sound.music.fadeIn(1, 0, 0.8);
 			case 'thorns':
@@ -71,7 +83,7 @@ class DialogueBox extends FlxSpriteGroup
 				bgFade.alpha = 0.7;
 		}, 5);
 
-		if(PlayState.SONG.song.toLowerCase()=='fishy-tank' || PlayState.SONG.song.toLowerCase()=='underwater' || PlayState.SONG.song.toLowerCase()=='unspeakable')
+		if(PlayState.SONG.song.toLowerCase()=='fishy-tank' || PlayState.SONG.song.toLowerCase()=='underwater' || PlayState.SONG.song.toLowerCase()=='unspeakable' || PlayState.SONG.song.toLowerCase()=='walkeing' || PlayState.SONG.song.toLowerCase()=='refreshed' || PlayState.SONG.song.toLowerCase()=='fish-box' || PlayState.SONG.song.toLowerCase()=='hifd' || PlayState.SONG.song.toLowerCase()=='snort' || PlayState.SONG.song.toLowerCase()=='rushe')
 		{
 			box = new FlxSprite(-20, 400);
 		}
@@ -125,7 +137,49 @@ class DialogueBox extends FlxSpriteGroup
 				box.setGraphicSize(Std.int(box.width / textBoxSizeFix));
 				box.updateHitbox();
 				box.animation.addByPrefix('normalOpen', 'Speech Bubble Normal Open', 24, false);
-				box.animation.addByIndices('normal', 'Speech Bubble Normal Open', [4], "", 24);			
+				box.animation.addByIndices('normal', 'Speech Bubble Normal Open', [4], "", 24);
+			case 'fish-box':
+				hasDialog = true;
+				box.frames = Paths.getSparrowAtlas('speech_bubble_talking', 'shared');
+				box.setGraphicSize(Std.int(box.width / textBoxSizeFix));
+				box.updateHitbox();
+				box.animation.addByPrefix('normalOpen', 'Speech Bubble Normal Open', 24, false);
+				box.animation.addByIndices('normal', 'Speech Bubble Normal Open', [4], "", 24);
+			case 'walkeing':
+				hasDialog = true;
+				box.frames = Paths.getSparrowAtlas('speech_bubble_talking', 'shared');
+				box.setGraphicSize(Std.int(box.width / textBoxSizeFix));
+				box.updateHitbox();
+				box.animation.addByPrefix('normalOpen', 'Speech Bubble Normal Open', 24, false);
+				box.animation.addByIndices('normal', 'Speech Bubble Normal Open', [4], "", 24);
+			case 'refreshed':
+				hasDialog = true;
+				box.frames = Paths.getSparrowAtlas('speech_bubble_talking', 'shared');
+				box.setGraphicSize(Std.int(box.width / textBoxSizeFix));
+				box.updateHitbox();
+				box.animation.addByPrefix('normalOpen', 'Speech Bubble Normal Open', 24, false);
+				box.animation.addByIndices('normal', 'Speech Bubble Normal Open', [4], "", 24);
+			case 'rushe':
+				hasDialog = true;
+				box.frames = Paths.getSparrowAtlas('speech_bubble_talking', 'shared');
+				box.setGraphicSize(Std.int(box.width / textBoxSizeFix));
+				box.updateHitbox();
+				box.animation.addByPrefix('normalOpen', 'Speech Bubble Normal Open', 24, false);
+				box.animation.addByIndices('normal', 'Speech Bubble Normal Open', [4], "", 24);
+			case 'hifd':
+				hasDialog = true;
+				box.frames = Paths.getSparrowAtlas('speech_bubble_talking', 'shared');
+				box.setGraphicSize(Std.int(box.width / textBoxSizeFix));
+				box.updateHitbox();
+				box.animation.addByPrefix('normalOpen', 'Speech Bubble Normal Open', 24, false);
+				box.animation.addByIndices('normal', 'Speech Bubble Normal Open', [4], "", 24);
+			case 'snort':
+				hasDialog = true;
+				box.frames = Paths.getSparrowAtlas('speech_bubble_talking', 'shared');
+				box.setGraphicSize(Std.int(box.width / textBoxSizeFix));
+				box.updateHitbox();
+				box.animation.addByPrefix('normalOpen', 'Speech Bubble Normal Open', 24, false);
+				box.animation.addByIndices('normal', 'Speech Bubble Normal Open', [4], "", 24);									
 		}
 
 		this.dialogueList = dialogueList;
@@ -149,6 +203,30 @@ class DialogueBox extends FlxSpriteGroup
 		portraitLeftFishy.scrollFactor.set();
 		add(portraitLeftFishy);
 		portraitLeftFishy.visible = false;
+
+		portraitLeftFishyThree = new FlxSprite(-20, 170);
+		portraitLeftFishyThree.frames = Paths.getSparrowAtlas('fishyThreePortrait', 'shared');
+		portraitLeftFishyThree.animation.addByPrefix('enter', 'fishy Portrait ', 24, false);
+		portraitLeftFishyThree.updateHitbox();
+		portraitLeftFishyThree.scrollFactor.set();
+		add(portraitLeftFishyThree);
+		portraitLeftFishyThree.visible = false;
+
+		portraitLeftFishyEvil = new FlxSprite(-20, 170);
+		portraitLeftFishyEvil.frames = Paths.getSparrowAtlas('fishyEvilPortrait', 'shared');
+		portraitLeftFishyEvil.animation.addByPrefix('enter', 'fishy Portrait ', 24, false);
+		portraitLeftFishyEvil.updateHitbox();
+		portraitLeftFishyEvil.scrollFactor.set();
+		add(portraitLeftFishyEvil);
+		portraitLeftFishyEvil.visible = false;
+	
+		portraitLeftPeppa = new FlxSprite(-20, 170);
+		portraitLeftPeppa.frames = Paths.getSparrowAtlas('peppaPortrait', 'shared');
+		portraitLeftPeppa.animation.addByPrefix('enter', 'fishy Portrait ', 24, false);
+		portraitLeftPeppa.updateHitbox();
+		portraitLeftPeppa.scrollFactor.set();
+		add(portraitLeftPeppa);
+		portraitLeftPeppa.visible = false;
 
 		portraitLeftVB = new FlxSprite(-20, 170);
 		portraitLeftVB.frames = Paths.getSparrowAtlas('voiceBoxPortrait', 'shared');
@@ -254,12 +332,20 @@ class DialogueBox extends FlxSpriteGroup
 							portraitLeft.visible = false;
 							portraitRight.visible = false;
 						}						
-						if (PlayState.SONG.song.toLowerCase() == 'fishy-tank' || PlayState.SONG.song.toLowerCase() == 'underwater'){
+						if (PlayState.SONG.song.toLowerCase() == 'fishy-tank' || PlayState.SONG.song.toLowerCase() == 'underwater' || PlayState.SONG.song.toLowerCase() == 'hifd'){
 							portraitLeftFishy.visible = false;
 							portraitRightBF.visible = false;
 						}						
 						if (PlayState.SONG.song.toLowerCase() == 'unspeakable'){
 							portraitLeftVB.visible = false;
+							portraitRightBF.visible = false;
+						}
+						if (PlayState.SONG.song.toLowerCase() == 'walkeing' || PlayState.SONG.song.toLowerCase() == 'refreshed'){
+							portraitLeftFishyThree.visible = false;
+							portraitRightBF.visible = false;
+						}
+						if (PlayState.SONG.song.toLowerCase() == 'fish-box'){
+							portraitLeftFishyEvil.visible = false;
 							portraitRightBF.visible = false;
 						}
 						swagDialogue.alpha -= 1 / 5;
@@ -312,6 +398,27 @@ class DialogueBox extends FlxSpriteGroup
 					portraitLeftFishy.visible = true;
 					portraitLeftFishy.animation.play('enter');
 				}
+			case 'peppa':
+				portraitRightBF.visible = false;
+				if (!portraitLeftPeppa.visible)
+				{
+					portraitLeftPeppa.visible = true;
+					portraitLeftPeppa.animation.play('enter');
+				}
+			case 'fishy-three':
+				portraitRightBF.visible = false;
+				if (!portraitLeftFishyThree.visible)
+				{
+					portraitLeftFishyThree.visible = true;
+					portraitLeftFishyThree.animation.play('enter');
+				}
+			case 'fishy-evil':
+				portraitRightBF.visible = false;
+				if (!portraitLeftFishyEvil.visible)
+				{
+					portraitLeftFishyEvil.visible = true;
+					portraitLeftFishyEvil.animation.play('enter');
+				}
 			case 'voicebox':
 				portraitRightBF.visible = false;
 				if (!portraitLeftVB.visible)
@@ -328,6 +435,10 @@ class DialogueBox extends FlxSpriteGroup
 				}
 			case 'bf2':
 				portraitLeftFishy.visible = false;
+				portraitLeftFishyThree.visible = false;
+				portraitLeftFishyEvil.visible = false;
+				portraitLeftVB.visible = false;
+				portraitLeftPeppa.visible = false;
 				if (!portraitRightBF.visible)
 				{
 					portraitRightBF.visible = true;
