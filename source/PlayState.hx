@@ -714,6 +714,17 @@ class PlayState extends MusicBeatState
 				add(bg2);
 					
 			}
+		else if (SONG.song.toLowerCase() == 'snort')
+			{
+				curStage = 'peppahouse';
+				defaultCamZoom = 0.9;
+				var bg:FlxSprite = new FlxSprite(-700, -300).loadGraphic(Paths.image('fishy/PeppaBG1','shared'));
+				bg.antialiasing = true;
+				bg.scale.set(0.8, 0.8);
+				bg.active = false;
+				add(bg);
+					
+			}
 		else
 		{
 			defaultCamZoom = 0.9;

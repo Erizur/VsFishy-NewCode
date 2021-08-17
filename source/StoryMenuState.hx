@@ -33,7 +33,7 @@ class StoryMenuState extends MusicBeatState
 		['Senpai', 'Roses', 'Thorns'],
 		['Fishy-Tank', 'Underwater', 'Unspeakable'],
 		['Walkeing', 'Refreshed', 'Fish-Box'],
-		['HIFD', 'Snort', 'Rushe']
+		['HIFD', 'Rushe']
 	];
 	var curDifficulty:Int = 1;
 
