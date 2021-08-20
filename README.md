@@ -6,7 +6,7 @@
 
 # Friday Night Funkin' Vs. Fishy! - KE 1.2.2
 
-This is the repository for Friday Night Funkin' Vs. Fishy, a game originally made for Ludum Dare 47 "Stuck In a Loop". And a completely reworked engine, plus this cool mod that was made in 2 months.
+This is the repository for Friday Night Funkin', a game originally made for Ludum Dare 47 "Stuck In a Loop". And a completely reworked engine, plus this cool mod that was made in 2 months.
 
 Play the Ludum Dare prototype here: https://ninja-muffin24.itch.io/friday-night-funkin
 Play the Newgrounds one here: https://www.newgrounds.com/portal/view/770371
