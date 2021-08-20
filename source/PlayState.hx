@@ -1902,6 +1902,10 @@ class PlayState extends MusicBeatState
 				{
 					endSong();
 				}
+			else if (StringTools.replace(PlayState.SONG.song, " ", "-").toLowerCase() == 'fish-box')
+			{
+				FlxG.switchState(new VideoState('assets/videos/THEREALFISHJUMPSCARE.webm', new ExitState()));
+			}
 			else
 				{
 					openSubState(new GameOverSubstate(boyfriend.getScreenPosition().x, boyfriend.getScreenPosition().y));
@@ -2045,6 +2049,11 @@ class PlayState extends MusicBeatState
 
 			if (storyPlaylist.length <= 0)
 			{
+				if(StringTools.replace(PlayState.SONG.song, " ", "-").toLowerCase() == 'fish-box'){
+					FlxG.switchState(new VideoState('assets/videos/fishyEvilCutscene.webm', new StoryMenuState()));
+				}
+				else
+				{
 				FlxG.sound.playMusic(Paths.music('freakyMenu'));
 
 				transIn = FlxTransitionableState.defaultTransIn;
@@ -2063,6 +2072,7 @@ class PlayState extends MusicBeatState
 
 				FlxG.save.data.weekUnlocked = StoryMenuState.weekUnlocked;
 				FlxG.save.flush();
+				}		
 			}
 			else
 			{
